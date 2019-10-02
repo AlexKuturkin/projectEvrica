@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mesto</title>
+  <title>Эврика</title>
   <link rel="stylesheet" href="./pages/index.css">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
@@ -29,10 +29,10 @@
 <body>
   <header>
     <section class="header">
-    <img src='./images/Object.svg' class="header__image">
+    <img src='./images/Object.svg' alt="логотип компании NOVOC" class="header__image">
     <p>
       <span class="header__bold">Агентство недвижимости</span> <br>
-      <img src='./images/metro-logo-vector-light copy 4.svg' class="header__logo"><span class="header__text"> Москва, «Беляево», ул. Миклухо-Маклая, д. 43</span>
+      <img src='./images/metro-logo-vector-light copy 4.svg' alt="логотип Калужско-Рижской линии" class="header__logo"><span class="header__text"> Москва, «Беляево», ул. Миклухо-Маклая, д. 43</span>
     </p>
     <p>
       <span class="header__bold">+7 (495) 276-03-03</span><br>
@@ -49,20 +49,20 @@
         <a href="#" class="nav__item nav__item_border">ипотека</a> 
         <a href="#" class="nav__item nav__item_border">услуги</a> 
         <a href="#" class="nav__item nav__item_border">контакты</a>
-        <img src='./images/search icon.svg' class="nav__image">
+        <img src='./images/search icon.svg' alt="иконка поиска" class="nav__image">
       </nav>
     </section>
   </header>
   <main>
     <section class="banner">
       <h1 class="banner__headline">Купить квартиру в новостройке</h1>
-      <button class="banner__button banner__button_phone"><img src='./images/phone icon.svg' class="banner__logo banner__logo_phone">Обратный звонок</button>
-      <button class="banner__button banner__button_calendar"><img src='./images/calendar.svg' class="banner__logo">Записаться на показ</button>
+      <button class="banner__button banner__button_phone"><img src='./images/phone icon.svg' alt="иконка телефона" class="banner__logo banner__logo_phone">Обратный звонок</button>
+      <button class="banner__button banner__button_calendar"><img src='./images/calendar.svg' alt="иконка календаря" class="banner__logo">Записаться на показ</button>
       <div class="banner__div">
         <p>
           <label for="amount" class="banner__label">Стоимость, млн рублей:</label>
           <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-        </p><button class="banner__button_hover"><img src='./images/phone icon copy 2.svg' class="banner__button_image">Помощь в подборе</button>
+        </p><button class="banner__button_hover"><img src='./images/phone icon copy 2.svg' alt="иконка трубки телефона" class="banner__button_image">Помощь в подборе</button>
       <div class="banner__slider">
         <div id="slider-range">
           <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%;width: 112%;background-color: #74CFB7;height: 8px;"></div>
@@ -119,15 +119,17 @@
       </ul>
     </div>
     </section>
-    <section class="map">
-      <img src="./images/pin copy 6.svg" class="map__mark">
-      <img src="./images/свернуть.png" class="map__hide">
+    <section class="map__conteiner">
+    <div class="map">
+      <img src="./images/pin copy 6.svg" alt="метка на карте" class="map__mark">
+      <img src="./images/свернуть.png" alt="иконка 'свернуть' карту" class="map__hide">
       <div class="map__div">
         <a href="#"><img src="./images/imageHouse.jpg" class="map__image"></a>
-        <img src="./images/close icon.svg" class="map__logo_close">
+        <img src="./images/close icon.svg" alt="закрывающий окно крестик" class="map__logo_close">
         <div class="map__info">
           <h4 class="map__h4">ЖК Премиум-квартал JAZZ</h4>
-          <p><img src="./images/metro-logo-vector-light copy.svg" class="map__logo_metro">Марьина роща <span class="map__text_grey map__text_grey_space">2 минуты пешком</span></p>
+          <p><img src="./images/metro-logo-vector-light copy.svg" alt="логотип Люблинско-Дмитровской линии" 
+            class="map__logo_metro">Марьина роща <span class="map__text_grey map__text_grey_space">2 минуты пешком</span></p>
           <p>Марьина роща, ул. Сущевский вал, 49</p>
           <table class="map__table">
             <tbody>
@@ -162,6 +164,52 @@
             </tbody>
           </table>
           <button class="map__button">Заказать просмотр</button>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section class="places">
+      <div class="places__conteiner">
+        <div class="places__info">
+          <h3 class="places__headline">Микрорайон Некрасовка</h3>
+          <p><img src="./images/metro-logo-vector-light copy.svg" alt="логотип Люблинско-Дмитровской линии" 
+          class="map__logo_metro">Марьина роща <span class="map__text_grey map__text_grey_space">2 минуты пешком</span></p>
+          <p>Москва, ЮВАО, район Некрасовка, Люберецкие поля аэрации</p>
+          <table class="map__table">
+              <tbody>
+                <tr class="map__text_tr">
+                  <td width="80" class="map__text_grey">1-комнатные от 30 м²</td>
+                  <td>6 900 000 р.</td>
+                </tr>
+                <tr class="">
+                  <td class="">2-комнатные от 75 м²</td>
+                  <td>от 22 900 000 р.</td>
+                </tr>
+                <tr class="">
+                  <td class="">3-комнатные от 74 м²</td>
+                  <td>от 17 400 000 р.</td>
+                </tr>
+                <tr class="">
+                  <td class="">4-комнатные от 177 м²</td>
+                  <td>от 63 200 000 р.</td>
+                </tr>
+                <tr>
+                  <td class="">Стадия готовности:</td>
+                  <td>Монтаж завершен. Ввод дома в эксплуатацию в 4 квартале 2019 года / На заселении.</td>
+                </tr>
+                <tr>
+                  <td class="">Ипотека:</td>
+                  <td>Есть</td>
+                </tr>
+                <tr>
+                  <td class="">Отделка:</td>
+                  <td>Возможна</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <div class="places__image">
+          <img src="./images/Bitmap nekrasovka.jpg" alt="Микрорайон Некрасовка">
         </div>
       </div>
     </section>
