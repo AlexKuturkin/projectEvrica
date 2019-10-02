@@ -350,10 +350,14 @@ body {
 .map__text_grey {
   color: #1F252D;
   opacity: 0.6;
+  width: 55%;
 } 
 
 .map__text_grey_space {
-padding-left: 4%; 
+padding-left: 3%; 
+font-weight: 300;
+font-size: 13px;
+line-height: 15px;
 }
 
 .map__text_tr {
@@ -390,12 +394,32 @@ padding-left: 4%;
 }
 
 .places__info {
-  margin: 35px 55px 55px 40px;
+  margin: 35px 55px 40px;
   width: 50%;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .places__headline {
   font-weight: 600;
   font-size: 24px;
   line-height: 28px;
+  margin: 0;
+}
+
+.places__step-finish {
+  vertical-align: bottom;
+  height: 10vh;
+}
+
+.places__td {
+  border-right: 1px solid #f7f7f7;
+}
+
+.places__second-column {
+  padding-left: 7%;
+}
+
+.places__td_mod {
+  height: 30px;
 }
