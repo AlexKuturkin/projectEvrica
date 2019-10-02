@@ -298,6 +298,7 @@ body {
 .map__hide {
   position: absolute;
   right: 0px;
+  cursor: pointer;
 }
 
 .map__div {
