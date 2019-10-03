@@ -643,3 +643,7 @@ line-height: 15px;
 .footer__logo {
   margin-right: 10px;
 }
+
+.ui-slider-range:last-child {
+  background-color: #74CFB7; 
+}
