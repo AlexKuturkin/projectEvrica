@@ -598,3 +598,7 @@ line-height: 15px;
 .footer__logo {
   margin-right: 10px;
 }
+
+#a {
+  background-color: rgb(116, 207, 183);
+}
