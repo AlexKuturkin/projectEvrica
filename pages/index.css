@@ -599,6 +599,6 @@ line-height: 15px;
   margin-right: 10px;
 }
 
-#a {
+.ui-slider-range:last-child {
   background-color: rgb(116, 207, 183);
 }
